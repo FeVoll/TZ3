@@ -1,4 +1,4 @@
-[![pipeline status](https://gitlab.com/FeVoll/TZ3/badges/tests/pipeline.svg)](https://gitlab.com/FeVoll/TZ3/-/commits/tests)
+[![pipeline status](https://gitlab.com/FeVoll/TZ3/badges/tests/pipeline.svg)](https://gitlab.com/FeVoll/TZ3/-/pipelines)
 # Техническое задание 3
 ### Что делает программа? (tz3.py)
 В файле на вход (numbers.txt) даны числа в строчку через пробел. Програма считавает их и выдает:
