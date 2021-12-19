@@ -2,8 +2,11 @@
 import time
 start = time.time()
 filename = open("numbers.txt", "r")
-numbersstr = filename.read()
-nums = numbersstr.split(" ")
+try:
+    numbersstr = filename.read()
+    nums = numbersstr.split(" ")
+except OverflowError:
+    print("Слишком много цифр")
 try:
     nums = list(map(int, nums))
     list_len = len(nums)
@@ -34,11 +37,13 @@ class Tz:
         return sum_nums
 
     def multi(self):
+
         total_mult = 1
         for y in nums:
             total_mult *= y
         multiplication = total_mult
         return multiplication
+
 
     def show_stat(self):
         print(Tz.min_num(""))
@@ -50,12 +55,13 @@ class Tz:
 
 
 
-
-Tz.show_stat('')
+try:
+    Tz.show_stat('')
+except OverflowError:
+    print("Произведение слишком большое")
 end = time.time()
 
 print(f"Скорость выполнения программы: {end - start} секунд(ы)")
-
 
 
 
